@@ -1,0 +1,67 @@
+.page-header {
+  padding-top: 16px;
+  padding-bottom: 62px;
+}
+
+.page-header__top {
+  display: flex;
+  flex-wrap: wrap;
+
+  line-height: $line-height-medium;
+}
+
+.page-header__left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.page-header__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+
+  text-align: right;
+}
+
+.page-header__address {
+  display: none;
+  margin: 0;
+}
+
+.page-header__tel {
+  margin: 0;
+}
+
+.page-header__link {
+  margin-top: -6px;
+}
+
+.page-header__wrapper{
+  display: flex;
+  flex-direction: column;
+  padding-top: 316px;
+
+  text-align: center;
+
+  background-image: url(../img/decor/bg1-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 21px -21px;
+  background-size: 243px 326px;
+}
+
+.page-header__title {
+  margin-bottom: 12px;
+}
+
+.page-header__title span {
+  display: block;
+
+  font-size: 18px;
+}
+
+.page-header__text {
+  margin: 0;
+  margin-bottom: 13px;
+}

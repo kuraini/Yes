@@ -10,7 +10,7 @@ module.exports = function () {
       .pipe($.gulp.dest('build/css'))
       .pipe($.minify())
       .pipe($.rename('style.min.css'))
-      .pipe($.sourcemaps.write())
+      .pipe($.sourcemaps.write('.'))
       .pipe($.gulp.dest('build/css'))
       .pipe($.server.stream());
   });

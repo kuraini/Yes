@@ -1,0 +1,50 @@
+.promo {
+  position: relative;
+
+  padding-top: 216px;
+  padding-bottom: 108px;
+
+  text-align: center;
+
+  background-image:  url(../img/decor/wave.svg), url(../img/decor/wave.svg), url(../img/decor/bg-plane-mobile.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 14px 170px, 227px 27px, 0 0;
+  background-size: 80px 11px, 80px 11px, 320px 190px;
+}
+
+.promo::before {
+  content: "";
+  position: absolute;
+  top: 72px;
+  right: 19px;
+  z-index: 1;
+
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+  background-color: $blue;
+}
+
+.promo::after {
+  content: "";
+  position: absolute;
+  bottom: 68px;
+  left: 42px;
+  z-index: 1;
+
+  width: 23px;
+  height: 23px;
+
+  border-radius: 50%;
+  background-color: $blue;
+}
+
+.promo__title {
+  margin-bottom: 17px;
+}
+
+.promo__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+}

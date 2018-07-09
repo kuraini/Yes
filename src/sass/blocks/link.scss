@@ -1,0 +1,12 @@
+.link {
+  line-height: $line-height-medium;
+  color: $link-font-color;
+
+  border-bottom: 2px solid rgba(245, 17, 44, 0.5);
+}
+
+.link:hover {
+  color: $blue;
+
+  border-color: rgba(36, 41, 255, 0.5);
+}

@@ -1,0 +1,44 @@
+.teachers__title {
+  margin-bottom: 7px;
+}
+
+.teachers__list {
+  display: flex;
+  flex-direction: column;
+
+  @include list-reset;
+}
+
+.teachers__item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+  margin-bottom: 26px;
+}
+
+.teachers__item:last-child {
+  margin-bottom: 0;
+}
+
+.teachers__image-wrapper {
+  width: 285px;
+  margin-bottom: 16px;
+
+  overflow: hidden;
+}
+
+.teachers__image {
+  display: block;
+}
+
+.teachers__item-title {
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-size: 14px;
+  line-height: $line-height-large;
+}
+
+.teachers__text {
+  margin: 0;
+}

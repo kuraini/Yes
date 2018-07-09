@@ -1,0 +1,56 @@
+.title {
+  position: relative;
+
+  margin: 0;
+  padding-bottom: 20px;
+
+  font-weight: 800;
+  font-size: $font-size-large;
+  line-height: 1.2;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 64px;
+    height: 7px;
+
+    background-color: $link-font-color;
+  }
+}
+
+.title--question {
+  padding-top: 25px;
+  padding-right: 45px;
+  padding-left: 45px;
+  padding-bottom: 40px;
+
+  &::after {
+    display: none;
+  }
+
+  &::before {
+    content: "?";
+    position: absolute;
+    top: -42px;
+    right: -9px;
+
+    font-size: 200px;
+
+    opacity: 0.09;
+  }
+}
+
+.title--no-line {
+  font-size: 30px;
+
+  &::after {
+    display: none;
+  }
+}
