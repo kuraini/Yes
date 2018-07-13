@@ -40,17 +40,38 @@
     position: absolute;
     top: -42px;
     right: -9px;
+    z-index: -1;
 
     font-size: 200px;
-
+    color: #000000;
     opacity: 0.09;
   }
 }
 
 .title--no-line {
+  padding-bottom: 0;
+
   font-size: 30px;
 
   &::after {
     display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    padding-bottom: 25px;
+
+    font-size: $font-size-x-large;
+    text-align: left;
+
+    &::after {
+      left: 0;
+      transform: none;
+    }
+  }
+
+  .title--no-line {
+    padding-bottom: 0;
   }
 }

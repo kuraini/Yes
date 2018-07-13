@@ -30,12 +30,15 @@
 
     <div class="wrapper">
       <header class="page-header">
-        <div class="container">
+        <div class="page-header__container container">
 
           <div class="page-header__top">
             <div class="page-header__left">
               <a href="#" class="page-header__logo logo">
-                <img src="img/logo-mobile.png" width="63" height="23" alt="Школа английского языка Yes" class="logo__image">
+                <picture>
+                  <source type="image/webp" srcset="img/content/logo-mobile.webp 1x, img/content/logo-mobile@2x.webp 2x">
+                  <img src="img/content/logo-mobile.png" srcset="img/content/logo-mobile@2x.png 2x" alt="Школа английского языка Yes" class="logo__image">
+                </picture>
               </a>
               <p class="page-header__address">г. Москва ул. Северная, 35</p>
             </div>
@@ -49,7 +52,7 @@
           <div class="page-header__wrapper">
             <h1 class="page-header__title title"><span>Ускоренный</span> 2-месячный курс английского языка</h1>
 
-            <p class="page-header__text">Освойте английский для путешествий и научитесь объясняться в любой ситуации</p>
+            <p class="page-header__text">Освойте английский для путешествий<br> и научитесь объясняться в любой ситуации</p>
             <a href="#" class="page-header__button button action">Записаться на пробное занятие</a>
           </div>
         </div>
@@ -57,34 +60,54 @@
 
       <main>
         <section class="reasons">
-          <div class="container">
+          <div class="reasons__container container">
 
             <h2 class="reasons__title title title--question">Бывали ли вы в подобных ситуaциях<span class="visually-hidden">?</span></h2>
 
             <ol class="reasons__list">
               <li class="reasons__item">
-                <p class="reasons__text">Вы думали, что знаете английский, но в гостинице с трудом выговариваете, какой номер вам нужен</p>
+                <p class="reasons__text">Вы думали, что знаете<br> английский, но в гостинице<br> с трудом выговариваете,<br> какой номер вам нужен</p>
                 <div class="reasons__image-wrapper">
-                  <img src="img/content/reason1-mobile.jpg" alt="" width="290" height="230" class="reasons__img">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 755px)" srcset="img/content/reason1-tablet.webp 1x, img/content/reason1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/reason1-mobile.webp 1x, img/content/reason1-mobile@2x.webp 2x">
+                    <source media="(min-width: 755px)" srcset="img/content/reason1-tablet.jpg 1x, img/content/reason1-tablet@2x.jpg 2x">
+                    <img src="img/content/reason1-mobile.jpg" srcset="img/content/reason1-mobile@2x.jpg 2x" alt="" class="reasons__img">
+                  </picture>
+                </div>
+              </li>
+              <li class="reasons__item reasons__item--reverse">
+                <p class="reasons__text">Вы смогли спросить,<br> до какой станции метро нужно дойти,<br>но не поняли, куда вас отправили</p>
+                <div class="reasons__image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 755px)" srcset="img/content/reason2-tablet.webp 1x, img/content/reason2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/reason2-mobile.webp 1x, img/content/reason2-mobile@2x.webp 2x">
+                    <source media="(min-width: 755px)" srcset="img/content/reason2-tablet.jpg 1x, img/content/reason2-tablet@2x.jpg 2x">
+                    <img src="img/content/reason2-mobile.jpg" srcset="img/content/reason2-mobile@2x.jpg 2x" alt="" class="reasons__img">
+                  </picture>
                 </div>
               </li>
               <li class="reasons__item">
-                <p class="reasons__text">Вы смогли спросить,<br> до какой станции метро нужно дойти, но не поняли, куда вас отправили</p>
+                <p class="reasons__text">В аэропорту при любом подозрении<br> на задрежку, вы ищите представителя, хоть как-то говорящего по-русски</p>
                 <div class="reasons__image-wrapper">
-                  <img src="img/content/reason2-mobile.jpg" alt="" width="290" height="232" class="reasons__img">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 755px)" srcset="img/content/reason3-tablet.webp 1x, img/content/reason3-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/reason3-mobile.webp 1x, img/content/reason3-mobile@2x.webp 2x">
+                    <source media="(min-width: 755px)" srcset="img/content/reason3-tablet.jpg 1x, img/content/reason3-tablet@2x.jpg 2x">
+                    <img src="img/content/reason3-mobile.jpg" srcset="img/content/reason3-mobile@2x.jpg 2x" alt="" class="reasons__img">
+                  </picture>
                 </div>
               </li>
-              <li class="reasons__item">
-                <p class="reasons__text">В аэропорту при любом подозрении на задрежку, вы ищите представителя, хоть как-то говорящего по-русски</p>
-                <div class="reasons__image-wrapper">
-                  <img src="img/content/reason3-mobile.jpg" alt="" width="290" height="429" class="reasons__img">
-                </div>
-              </li>
-              <li class="reasons__item">
+              <li class="reasons__item reasons__item--reverse">
                 <strong class="reasons__item-title">В итоге ...</strong>
-                <p class="reasons__text">Все это портит впечатление от отдыха и отбивает желание посещать новые страны</p>
+                <p class="reasons__text">Все это портит впечатление<br> от отдыха и отбивает желание посещать новые страны</p>
                 <div class="reasons__image-wrapper">
-                  <img src="img/content/reason-resume-mobile.jpg" alt="" width="290" height="153" class="reasons__img">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 755px)" srcset="img/content/reason-resume-tablet.webp 1x, img/content/reason-resume-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/reason-resume-mobile.webp 1x, img/content/reason-resume-mobile@2x.webp 2x">
+                    <source media="(min-width: 755px)" srcset="img/content/reason-resume-tablet.jpg 1x, img/content/reason-resume-tablet@2x.jpg 2x">
+                    <img src="img/content/reason-resume-mobile.jpg" srcset="img/content/reason-resume-mobile@2x.jpg 2x" alt="" class="reasons__img">
+                  </picture>
                 </div>
               </li>
             </ol>
@@ -93,7 +116,7 @@
         </section>
 
         <section class="features">
-          <div class="container">
+          <div class="features__container container">
 
             <h2 class="features__title title">Мы предусмотрели эти ситуации</h2>
 
@@ -116,14 +139,19 @@
         </section>
 
         <section class="teachers">
-          <div class="container">
+          <div class="teachers__container container">
 
             <h2 class="teachers__title title title--no-line">Кто ведет курс</h2>
 
             <ul class="teachers__list">
               <li class="teachers__item">
                 <div class="teachers__image-wrapper">
-                  <img src="img/content/teachers/teacher1-mobile.jpg" alt="Алла Ристовская" width="285" height="227" class="teachers__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 755px)" srcset="img/content/teachers/teacher1-tablet.webp 1x, img/content/teachers/teacher1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/teachers/teacher1-mobile.webp 1x, img/content/teachers/teacher1-mobile.webp 2x">
+                    <source media="(min-width: 755px)" srcset="img/content/teachers/teacher1-tablet.jpg 1x, img/content/teachers/teacher1-tablet@2x.jpg 2x">
+                    <img src="img/content/teachers/teacher1-mobile.jpg" srcset="img/content/teachers/teacher1-mobile@2x.jpg 2x" alt="Алла Ристовская" class="teachers__image">
+                  </picture>
                 </div>
                 <h3 class="teachers__item-title">Алла Ристовская</h3>
                 <p class="teachers__text">Занимается преподаванием английского языка с 2007 года. За 7 лет практики Алла занималась более чем с 80 студентами.</p>
@@ -132,7 +160,12 @@
 
               <li class="teachers__item">
                 <div class="teachers__image-wrapper">
-                  <img src="img/content/teachers/teacher2-mobile.jpg" alt="Анастасия Левчук" width="285" height="227" class="teachers__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 755px)" srcset="img/content/teachers/teacher2-tablet.webp 1x, img/content/teachers/teacher2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/teachers/teacher2-mobile.webp 1x, img/content/teachers/teacher2-mobile.webp 2x">
+                    <source media="(min-width: 755px)" srcset="img/content/teachers/teacher2-tablet.jpg 1x, img/content/teachers/teacher2-tablet@2x.jpg 2x">
+                    <img src="img/content/teachers/teacher2-mobile.jpg" srcset="img/content/teachers/teacher2-mobile@2x.jpg 2x" alt="Анастасия Левчук" class="teachers__image">
+                  </picture>
                 </div>
                 <h3 class="teachers__item-title">Анастасия Левчук</h3>
                 <p class="teachers__text">Закончила Алтайскую Государственную педагогическую Академию по специальности "теория и методика преподавания иностранных языков и культур".</p>
@@ -141,7 +174,12 @@
 
               <li class="teachers__item">
                 <div class="teachers__image-wrapper">
-                  <img src="img/content/teachers/teacher3-mobile.jpg" alt="Евгений Пак" width="285" height="227" class="teachers__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 755px)" srcset="img/content/teachers/teacher3-tablet.webp 1x, img/content/teachers/teacher3-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/teachers/teacher3-mobile.webp 1x, img/content/teachers/teacher3-mobile.webp 2x">
+                    <source media="(min-width: 755px)" srcset="img/content/teachers/teacher3-tablet.jpg 1x, img/content/teachers/teacher3-tablet@2x.jpg 2x">
+                    <img src="img/content/teachers/teacher3-mobile.jpg" srcset="img/content/teachers/teacher3-mobile@2x.jpg 2x" alt="Евгений Пак" class="teachers__image">
+                  </picture>
                 </div>
                 <h3 class="teachers__item-title">Евгений Пак</h3>
                 <p class="teachers__text">Сетифицированный специалист (диплом ОмГПУ, TTC в Кембридже, TESOL в Лондоне).
@@ -154,7 +192,7 @@
         </section>
 
         <section class="program">
-          <div class="container">
+          <div class="program__container container">
 
             <h2 class="program__title title">Что входит<br> в стоимость</h2>
 
@@ -200,7 +238,7 @@
         </section>
 
         <section class="about">
-          <div class="container">
+          <div class="about__container container">
 
             <h2 class="about__title title">Как все будет проходить</h2>
 
@@ -211,17 +249,27 @@
                   <p class="about__text">Слова запоминаются в результате упрощенных техник и применения<br> в спонтанных ситуациях,<br> а не посредством зубрежки</p>
                 </div>
                 <div class="about__image-wrapper">
-                  <img src="img/content/about1-mobile.jpg" alt="" width="290" height="175" class="about__image">
+                  <picture>
+                    <source  type="image/webp" media="(min-width: 755px)" srcset="img/content/about1-tablet.webp 1x, img/content/about1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/about1-mobile.jpg 1x, img/content/about1-mobile@2x.jpg 2x">
+                    <source media="(min-width: 755px)" srcset="img/content/about1-tablet.jpg 1x, img/content/about1-tablet@2x.jpg 2x">
+                    <img src="img/content/about1-mobile.jpg" srcset="img/content/about1-mobile@2x.jpg 2x" alt="" class="about__image">
+                  </picture>
                 </div>
               </li>
 
-              <li class="about__item">
+              <li class="about__item about__item--reverse">
                 <div class="about__info">
                   <h3 class="about__item-title">Импровизация и диалоги</h3>
                   <p class="about__text">Форма импровизации позволяет подготовиться к ситуации, когда шаблонные ответы будут неприменимы</p>
                 </div>
                 <div class="about__image-wrapper">
-                  <img src="img/content/about2-mobile.jpg" alt="" width="288" height="175" class="about__image">
+                  <picture>
+                    <source  type="image/webp" media="(min-width: 755px)" srcset="img/content/about2-tablet.webp 1x, img/content/about2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/about2-mobile.webp 1x, img/content/about2-mobile@2x.webp 2x">
+                    <source media="(min-width: 755px)" srcset="img/content/about2-tablet.jpg 1x, img/content/about2-tablet@2x.jpg 2x">
+                    <img src="img/content/about2-mobile.jpg" srcset="img/content/about2-mobile@2x.jpg 2x" alt="" class="about__image">
+                  </picture>
                 </div>
               </li>
 
@@ -231,17 +279,27 @@
                   <p class="about__text">Прослушивание себя и профессионалов позволит<br> научиться воспринимать чужую речь на слух</p>
                 </div>
                 <div class="about__image-wrapper">
-                  <img src="img/content/about3-mobile.jpg" alt="" width="289" height="170" class="about__image">
+                  <picture>
+                    <source  type="image/webp" media="(min-width: 755px)" srcset="img/content/about3-tablet.webp 1x, img/content/about3-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/about3-mobile.webp 1x, img/content/about3-mobile@2x.webp 2x">
+                    <source media="(min-width: 755px)" srcset="img/content/about3-tablet.jpg 1x, img/content/about3-tablet@2x.jpg 2x">
+                    <img src="img/content/about3-mobile.jpg" srcset="img/content/about3-mobile@2x.jpg 2x" alt="" class="about__image">
+                  </picture>
                 </div>
               </li>
 
-              <li class="about__item">
+              <li class="about__item about__item--reverse">
                 <div class="about__info">
                   <h3 class="about__item-title">Повторение</h3>
                   <p class="about__text">Каждое следующее занятие включает в себя закрепление предыдущих тем и создает базу для прохождения следующих</p>
                 </div>
                 <div class="about__image-wrapper">
-                  <img src="img/content/about4-mobile.jpg" alt="" width="290" height="167" class="about__image">
+                  <picture>
+                    <source  type="image/webp" media="(min-width: 755px)" srcset="img/content/about4-tablet.webp 1x, img/content/about4-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/content/about4-mobile.webp 1x, img/content/about4-mobile@2x.webp 2x">
+                    <source media="(min-width: 755px)" srcset="img/content/about4-tablet.jpg 1x, img/content/about4-tablet@2x.jpg 2x">
+                    <img src="img/content/about4-mobile.jpg" srcset="img/content/about4-mobile@2x.jpg 2x" alt="" class="about__image">
+                  </picture>
                 </div>
               </li>
             </ul>
@@ -249,91 +307,118 @@
         </section>
 
         <section class="reviews">
-          <div class="container">
+          <div class="reviews__container container">
 
             <h2 class="reviews__title title">Отзывы студентов</h2>
 
             <div class="reviews__slider slider">
 
               <ul class="slider__list">
-                <li class="slider__item">
-                  <div class="slider__image-wrapper">
-                    <img src="img/content/users/user1-mobile.jpg" alt="" width="156" height="156" class="slider__image">
-                  </div>
-
-                  <h3 class="slider__title">Владимир Илецкий</h3>
-
-                  <p class="slider__text">
-                    Отличный курс! Помогли преодолеть языковой барьер, чувствую себя увереннее, уже нет страха, что не сможешь спросить дорогу или останешь в отеле без одеяла.
-                    Все основные темы для путешественника проработаны. Отдельное спасибо преподавателю Евгению за позитивный насторой и индивидуальный подход.
-                    Не думал, что учить английский это так весело.
-                  </p>
-
-                  <a href="#" class="slider__link link" target="_blank" rel="noopener">Вконтакте</a>
-                </li>
-
                 <li class="slider__item  slider__item--active">
                   <div class="slider__image-wrapper">
-                    <img src="img/content/users/user2-mobile.jpg" alt="" width="156" height="156" class="slider__image">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/users/user2-mobile.webp 1x, img/content/users/user2-mobile@2x.webp 2x">
+                      <img src="img/content/users/user2-mobile.jpg" srcset="img/content/users/user2-mobile@2x.jpg 2x" alt="Александра Иванова" class="slider__image">
+                    </picture>
                   </div>
 
-                  <h3 class="slider__title">Александра Иванова</h3>
+                  <div class="slider__text-wrapper">
+                    <h3 class="slider__title">Александра Иванова</h3>
 
-                  <p class="slider__text">
-                    Курс прошел незаметно и оставил после себя только хорошие воспоминания. Нашу группу на постоянной основе вела Алла,
-                    Настя и Женя приходили к нам для нарабатывания практики общения.
-                    Неделю назад были с мужем в Лондоне - хоть люди разные и речь у всех разная, но было так легко и спокойно!
-                    Мы ни разу не заблудились, в аэропорту меня водила за собой пожилая пара в качестве переводчика. Спасибо вам, это было очень полезно!
-                  </p>
+                    <p class="slider__text">
+                      Курс прошел незаметно и оставил после себя только хорошие воспоминания. Нашу группу на постоянной основе вела Алла,
+                      Настя и Женя приходили к нам для нарабатывания практики общения.<br>
+                      Неделю назад были с мужем в Лондоне - хоть люди разные и речь у всех разная, но было так легко и спокойно!
+                      Мы ни разу не заблудились, в аэропорту меня водила за собой пожилая пара в качестве переводчика.<br> Спасибо вам, это было очень полезно!
+                    </p>
 
-                  <a href="#" class="slider__link link" target="_blank" rel="noopener">Вконтакте</a>
+                    <a href="#" class="slider__link link" target="_blank" rel="noopener">Вконтакте</a>
+                  </div>
                 </li>
 
                 <li class="slider__item">
                   <div class="slider__image-wrapper">
-                    <img src="img/content/users/user3-mobile.jpg" alt="" width="156" height="156" class="slider__image">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/users/user1-mobile.webp 1x, img/content/users/user1-mobile@2x.webp 2x">
+                      <img src="img/content/users/user1-mobile.jpg" srcset="img/content/users/user1-mobile@2x.jpg 2x" alt="Владимир Илецкий" class="slider__image">
+                    </picture>
                   </div>
 
-                  <h3 class="slider__title">Евгения Смирнова</h3>
+                  <div class="slider__text-wrapper">
+                    <h3 class="slider__title">Владимир Илецкий</h3>
 
-                  <p class="slider__text">
-                    Если вы планируете путешествие, но английский был давно в школе, а может и того не было, то этот курс отличный вариант
-                    для быстрого вхождения в тему. Никогда раньше не участвовала в интенсивах, и боялась что будет тяжело и не хватит времени,
-                    но спасибо Насте, страхи не оправдались, курс пролетел очень быстро. Пакую чемоданы и впред, на встречу приключениям!
-                  </p>
+                    <p class="slider__text">
+                      Отличный курс! Помогли преодолеть языковой барьер, чувствую себя увереннее, уже нет страха, что не сможешь спросить дорогу или останешь в отеле без одеяла.
+                      Все основные темы для путешественника проработаны. Отдельное спасибо преподавателю Евгению за позитивный насторой и индивидуальный подход.
+                      Не думал, что учить английский это так весело.
+                    </p>
 
-                  <a href="#" class="slider__link link" target="_blank" rel="noopener">Вконтакте</a>
+                    <a href="#" class="slider__link link" target="_blank" rel="noopener">Вконтакте</a>
+                  </div>
+                </li>
+
+                <li class="slider__item">
+                  <div class="slider__image-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/users/user3-mobile.webp 1x, img/content/users/user3-mobile@2x.webp 2x">
+                      <img src="img/content/users/user3-mobile.jpg" srcset="img/content/users/user3-mobile@2x.jpg 2x" alt="Евгения Смирнова" class="slider__image">
+                    </picture>
+                  </div>
+
+                  <div class="slider__text-wrapper">
+                    <h3 class="slider__title">Евгения Смирнова</h3>
+
+                    <p class="slider__text">
+                      Если вы планируете путешествие, но английский был давно в школе, а может и того не было, то этот курс отличный вариант
+                      для быстрого вхождения в тему. Никогда раньше не участвовала в интенсивах, и боялась что будет тяжело и не хватит времени,
+                      но спасибо Насте, страхи не оправдались, курс пролетел очень быстро. Пакую чемоданы и впред, на встречу приключениям!
+                    </p>
+
+                    <a href="#" class="slider__link link" target="_blank" rel="noopener">Вконтакте</a>
+                  </div>
                 </li>
               </ul>
 
               <div class="slider__controls">
-                <button class="slider__toggle" type="button"><span class="visually-hidden">Отзыв 1</span></button>
-                <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">Отзыв 2</span></button>
+                <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">Отзыв 1</span></button>
+                <button class="slider__toggle" type="button"><span class="visually-hidden">Отзыв 2</span></button>
                 <button class="slider__toggle" type="button"><span class="visually-hidden">Отзыв 3</span></button>
               </div>
+
+              <div class="slider__range range">
+                <div class="range__bar">
+                  <button class="range__button" type="button"><span class="visually-hidden">Переключить слайд</span></button>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
 
         <section class="promo">
-          <div class="container">
+          <div class="promo__container container">
 
-              <h2 class="promo__title title">Бесплатное<br> пробное занятие</h2>
+            <h2 class="promo__title title">Бесплатное<br> пробное занятие</h2>
 
-              <p class="promo__text">Приходите на бесплатное первое занятие по теме “аэропорт” и ощутите пользу сразу!</p>
-              <a href="#" class="promo__button button action">Записаться на пробное занятие</a>
+            <p class="promo__text">Приходите на бесплатное первое занятие по теме “аэропорт” и ощутите пользу сразу!</p>
+            <a href="#" class="promo__button button action">Записаться на пробное занятие</a>
           </div>
         </section>
       </main>
 
       <footer class="page-footer">
-        <div class="container">
+        <div class="page-footer__container container">
 
           <div class="page-footer__left">
-            <a href="#" class="page-footer__logo logo">
-              <img src="img/logo.png" alt="Yes" width="99" height="36" class="logo__image">
-            </a>
-            <p class="page-footer__text">Школа Английского Языка</p>
+            <div class="page-footer__wrapper">
+              <a href="#" class="page-footer__logo logo">
+                <picture>
+                  <source type="image/webp" srcset="img/content/logo.webp 1x, img/content/logo@2x.webp 2x">
+                  <img src="img/content/logo.png" srcset="img/content/logo@2x.jpg 2x" alt="Yes" width="99" height="36" class="logo__image">
+                </picture>
+              </a>
+              <p class="page-footer__text">Школа Английского Языка</p>
+            </div>
             <p class="page-footer__address">г. Москва ул. Северная, 35</p>
           </div>
 
@@ -391,6 +476,7 @@
 
     <div class="overlay"></div>
 
+    <script src="js/libs/picturefill.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

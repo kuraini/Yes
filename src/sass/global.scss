@@ -23,6 +23,13 @@ body {
   background-color: #ffffff;
 }
 
+@media (min-width: $tablet-width) {
+  body {
+    font-size: $font-size-medium;
+    line-height: $line-height-medium;
+  }
+}
+
 a {
   text-decoration: none;
 }

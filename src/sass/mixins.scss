@@ -3,3 +3,13 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin bagel-grey {
+  z-index: -1;
+
+  width: 433px;
+  height: 433px;
+
+  border: 76px solid #f5f5f5;
+  border-radius: 50%;
+}

@@ -3,6 +3,21 @@
   padding-bottom: 79px;
 }
 
+.reviews__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .reviews__title {
   margin-bottom: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    padding-top: 136px;
+  }
+
+  .reviews__title {
+    margin-bottom: 64px;
+  }
 }

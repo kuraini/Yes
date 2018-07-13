@@ -1,43 +1,41 @@
 .promo {
-  position: relative;
-
   padding-top: 216px;
   padding-bottom: 108px;
 
   text-align: center;
-
-  background-image:  url(../img/decor/wave.svg), url(../img/decor/wave.svg), url(../img/decor/bg-plane-mobile.png);
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 14px 170px, 227px 27px, 0 0;
-  background-size: 80px 11px, 80px 11px, 320px 190px;
 }
 
-.promo::before {
-  content: "";
-  position: absolute;
-  top: 72px;
-  right: 19px;
-  z-index: 1;
+.promo__container {
+  position: relative;
 
-  width: 10px;
-  height: 10px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -216px;
+    left: 0;
 
-  border-radius: 50%;
-  background-color: $blue;
-}
+    width: 320px;
+    height: 190px;
 
-.promo::after {
-  content: "";
-  position: absolute;
-  bottom: 68px;
-  left: 42px;
-  z-index: 1;
+    background-image:  url(../img/decor/circle-blue.svg), url(../img/decor/wave.svg), url(../img/decor/wave.svg), url(../img/decor/bg-plane-mobile.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: 290px 72px, 14px 170px, 227px 27px, 0 0;
+    background-size: 10px 10px, 80px 11px, 80px 11px, 320px 190px;
+  }
 
-  width: 23px;
-  height: 23px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -60px;
+    left: 41px;
+    z-index: 1;
 
-  border-radius: 50%;
-  background-color: $blue;
+    width: 23px;
+    height: 23px;
+
+    border-radius: 50%;
+    background-color: $blue;
+  }
 }
 
 .promo__title {
@@ -47,4 +45,59 @@
 .promo__text {
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    padding-top: 194px;
+    padding-bottom: 117px;
+
+    text-align: left;
+  }
+
+  .promo__container {
+    padding-left: 392px;
+
+    &::before {
+      top: -68px;
+      left: -278px;
+      width: 665px;
+      height: 380px;
+
+      background-image: url(../img/decor/circle-blue.svg), url(../img/decor/wave.svg), url(../img/decor/bg-plane-tablet.png);
+      background-position: 608px 356px, right 0, 6px 3px;
+      background-size: 23px 23px, 145px 19px, 681px 380px;
+    }
+
+    &::after{
+      top: -47px;
+      left: 766px;
+
+      box-shadow: 44px -57px 0 -6px $blue, 128px -5px 0 -6px $blue;
+    }
+  }
+
+  .promo__title {
+    margin-bottom: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -165px;
+      right: 4px;
+      z-index: -1;
+
+      width: 145px;
+      height: 19px;
+
+      background-image: url(../img/decor/wave.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 145px 19px;
+    }
+  }
+
+  .promo__text {
+    margin-bottom: 35px;
+  }
 }

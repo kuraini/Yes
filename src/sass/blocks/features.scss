@@ -3,6 +3,11 @@
   padding-bottom: 66px;
 }
 
+.features__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .features__title {
   margin-bottom: 23px;
 }
@@ -64,4 +69,82 @@
 
 .features__item:last-child .features__text {
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    padding-top: 127px;
+    padding-bottom: 143px;
+  }
+
+  .features__container {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -143px;
+      right: -272px;
+
+      width: 481px;
+      height: 365px;
+
+      background-image: url(../img/decor/bg2-tablet.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 481px 365px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -34px;
+      bottom: -55px;
+
+      width: 145px;
+      height: 19px;
+      background-image: url(../img/decor/wave.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 145px 19px;
+    }
+  }
+
+  .features__title {
+    width: 345px;
+    margin-bottom: 38px;
+    padding-bottom: 30px;
+  }
+
+  .features__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    align-items: flex-start;
+    width: 220px;
+    margin-right: 30px;
+    padding-left: 0;
+    padding-right: 5px;
+  }
+
+  .features__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .features__item-title {
+    margin-bottom: 6px;
+
+    font-size: $font-size-medium;
+
+    &::before {
+      left: 0;
+      transform: none;
+    }
+  }
+
+  .features__item:last-child .features__text {
+    text-align: left;
+  }
 }

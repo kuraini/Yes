@@ -1,5 +1,10 @@
+.teachers__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .teachers__title {
-  margin-bottom: 7px;
+  margin-bottom: 27px;
 }
 
 .teachers__list {
@@ -41,4 +46,108 @@
 
 .teachers__text {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .teachers__container {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 583px;
+      right: -402px;
+      z-index: -1;
+
+      width: 433px;
+      height: 433px;
+
+      border: 76px solid #f5f5f5;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 824px;
+      right: -6px;
+      z-index: -1;
+
+      width: 66px;
+      height: 34px;
+
+      background-image: url(../img/decor/wave3.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 66px 34px;
+    }
+  }
+  .teachers__title {
+    margin-bottom: 51px;
+  }
+
+  .teachers__list {
+    position: relative;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 156px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+
+      width: 1300px;
+      height: 2px;
+
+      background-color: $gray;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 145px;
+      left: -149px;
+      z-index: -1;
+
+      width: 23px;
+      height: 23px;
+
+      background-color: $blue;
+      border-radius: 50%;
+    }
+
+  }
+
+  .teachers__item {
+    width: 345px;
+    margin-right: 30px;
+  }
+
+  .teachers__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .teachers__image-wrapper {
+    width: 345px;
+    margin-bottom: 26px;
+  }
+
+  .teachers__item-title {
+    margin-bottom: 7px;
+
+    font-size: 18px;
+    line-height: $line-height-large;
+  }
+
+  .teachers__text {
+    font-size: $font-size-small;
+  }
+
+  .teachers__text br {
+    display: none;
+  }
 }
