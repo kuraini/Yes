@@ -17,12 +17,7 @@
 .teachers__item {
   display: flex;
   flex-direction: column;
-  padding-bottom: 15px;
-  margin-bottom: 26px;
-}
-
-.teachers__item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 41px;
 }
 
 .teachers__image-wrapper {
@@ -34,13 +29,15 @@
 
 .teachers__image {
   display: block;
+  width: 285px;
 }
 
 .teachers__item-title {
   margin: 0;
   margin-bottom: 5px;
 
-  font-size: 14px;
+  font-weight: 800;
+  font-size: $font-size-x-small;
   line-height: $line-height-large;
 }
 
@@ -76,7 +73,7 @@
       width: 66px;
       height: 34px;
 
-      background-image: url(../img/decor/wave3.svg);
+      background-image: url("../img/decor/wave3.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
       background-size: 66px 34px;
@@ -91,13 +88,13 @@
 
     flex-direction: row;
     flex-wrap: wrap;
+    margin-right: -30px;
 
     &::before {
       content: "";
       position: absolute;
       top: 156px;
-      left: 50%;
-      transform: translateX(-50%);
+      left: -271px;
       z-index: -1;
 
       width: 1300px;
@@ -119,7 +116,6 @@
       background-color: $blue;
       border-radius: 50%;
     }
-
   }
 
   .teachers__item {
@@ -127,27 +123,68 @@
     margin-right: 30px;
   }
 
-  .teachers__item:nth-child(2n) {
-    margin-right: 0;
-  }
-
   .teachers__image-wrapper {
     width: 345px;
     margin-bottom: 26px;
   }
 
+  .teachers__image {
+    width: 344px;
+  }
+
   .teachers__item-title {
     margin-bottom: 7px;
 
-    font-size: 18px;
+    font-size: $font-size-medium;
     line-height: $line-height-large;
   }
 
   .teachers__text {
-    font-size: $font-size-small;
+    font-size: $font-size-x-small;
+    line-height: $line-height-medium;
   }
 
   .teachers__text br {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .teachers__container::before {
+    top: -46px;
+    right: -217px;
+  }
+
+  .teachers__container::after {
+    top: 257px;
+    right: -221px;
+  }
+
+  .teachers__title {
+    margin-bottom: 47px;
+  }
+
+  .teachers__list::before {
+    top: 166px;
+    left: -392px;
+
+    width: 1416px;
+  }
+
+  .teachers__list::after {
+    top: 156px;
+    left: -150px;
+  }
+
+  .teachers__item {
+    width: 360px;
+  }
+
+  .teachers__image-wrapper {
+    width: 360px;
+  }
+
+  .teachers__image {
+    width: 360px;
   }
 }

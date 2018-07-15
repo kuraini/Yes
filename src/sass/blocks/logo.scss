@@ -1,11 +1,22 @@
 .logo {
   display: block;
   width: 63px;
-  height: 32px;
-  padding-top: 9px;
+  height: 23px;
 }
 
 .logo__image {
   width: 63px;
   height: 23px;
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    width: 99px;
+    height: 36px;
+  }
+
+  .logo__image {
+    width: 99px;
+    height: 36px;
+  }
 }

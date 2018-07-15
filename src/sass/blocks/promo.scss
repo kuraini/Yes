@@ -17,10 +17,20 @@
     width: 320px;
     height: 190px;
 
-    background-image:  url(../img/decor/circle-blue.svg), url(../img/decor/wave.svg), url(../img/decor/wave.svg), url(../img/decor/bg-plane-mobile.png);
+    background-image: url("../img/decor/circle-blue.svg"),
+                      url("../img/decor/wave.svg"),
+                      url("../img/decor/wave.svg"),
+                      url("../img/decor/bg-plane-mobile.png");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: 290px 72px, 14px 170px, 227px 27px, 0 0;
     background-size: 10px 10px, 80px 11px, 80px 11px, 320px 190px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/decor/circle-blue.svg"),
+                        url("../img/decor/wave.svg"),
+                        url("../img/decor/wave.svg"),
+                        url("../img/decor/bg-plane-mobile@2x.png");
+    }
   }
 
   &::after {
@@ -64,9 +74,17 @@
       width: 665px;
       height: 380px;
 
-      background-image: url(../img/decor/circle-blue.svg), url(../img/decor/wave.svg), url(../img/decor/bg-plane-tablet.png);
+      background-image: url("../img/decor/circle-blue.svg"),
+                        url("../img/decor/wave.svg"),
+                        url("../img/decor/bg-plane-tablet.png");
       background-position: 608px 356px, right 0, 6px 3px;
       background-size: 23px 23px, 145px 19px, 681px 380px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/decor/circle-blue.svg"),
+                          url("../img/decor/wave.svg"),
+                          url("../img/decor/bg-plane-tablet@2x.png");
+      }
     }
 
     &::after{
@@ -99,5 +117,56 @@
 
   .promo__text {
     margin-bottom: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    padding-top: 285px;
+    padding-bottom: 161px;
+  }
+
+  .promo__container {
+    padding-left: 634px;
+
+    &::before {
+      top: -145px;
+      width: 875px;
+      height: 565px;
+
+      background-image: url("../img/decor/circle-blue.svg"),
+                        url("../img/decor/wave.svg"),
+                        url("../img/decor/bg-plane-desktop.png");
+      background-position: 599px 539px, 645px 20px, -99px -26px;
+      background-size: 23px 23px, 145px 19px, 1308px 550px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/decor/circle-blue.svg"),
+                          url("../img/decor/wave.svg"),
+                          url("../img/decor/bg-plane-desktop@2x.png");
+      }
+    }
+
+    &::after {
+      top: -61px;
+      left: 1107px;
+    }
+  }
+
+  .promo__title {
+    margin-bottom: 21px;
+    padding-bottom: 30px;
+
+    &::before {
+      top: -256px;
+      right: 8px;
+    }
+  }
+
+  .promo__text {
+    margin-bottom: 98px;
+    padding-right: 50px;
+
+    line-height: $line-height-medium;
   }
 }

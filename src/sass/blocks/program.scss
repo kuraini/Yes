@@ -1,6 +1,7 @@
 .program {
   position: relative;
 
+  margin-top: -26px;
   padding-top: 422px;
   padding-bottom: 38px;
 
@@ -19,39 +20,22 @@
     width: 320px;
     height: 388px;
 
-    background-image:  url(../img/decor/wave.svg), url(../img/decor/bigben-mobile.png), url(../img/decor/bagel-blue-mobile.svg), url(../img/decor/bagel-gray-mobile.svg);
+    background-image: url("../img/decor/wave.svg"),
+                      url("../img/decor/bigben-mobile.png"),
+                      url("../img/decor/bagel-blue-mobile.svg"),
+                      url("../img/decor/bagel-gray-mobile.svg");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: 197px 227px, 1px 1px, 65px 64px, 45px 91px;
     background-size: 92px 13px, 267px 388px, 62px 62px, 228px 228px;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/decor/wave.svg"),
+                        url("../img/decor/bigben-mobile@2x.png"),
+                        url("../img/decor/bagel-blue-mobile.svg"),
+                        url("../img/decor/bagel-gray-mobile.svg");;
+    }
   }
 }
-/*
-.program::before {
-  content: "";
-  position: absolute;
-  top: 92px;
-  left: 45px;
-  z-index: -1;
-
-  width: 228px;
-  height: 228px;
-  border: 40px solid $light-gray;
-  border-radius: 50%;
-}
-
-.program::after {
-  content: "";
-  position: absolute;
-  top: 64px;
-  left: 65px;
-
-  width: 62px;
-  height: 62px;
-
-  border: 11px solid $blue;
-  border-radius: 50%;
-}*/
 
 .program__title {
   padding-bottom: 16px;
@@ -100,7 +84,8 @@
 
 @media (min-width: $tablet-width) {
   .program {
-    padding-top: 15px;
+    margin-top: -10px;
+    padding-top: 0;
     padding-bottom: 173px;
 
     text-align: left;
@@ -111,15 +96,25 @@
 
     &::before {
       top: 20px;
-      left: -272px;
-      width: 385px;
+      left: -513px;
+      width: 622px;
       height: 881px;
       z-index: -1;
 
-      background-image:  url(../img/decor/wave.svg), url(../img/decor/bigben-tablet.png), url(../img/decor/bagel-blue-mobile.svg), url(../img/decor/bagel-gray-mobile.svg);
+      background-image: url("../img/decor/wave.svg"),
+                        url("../img/decor/bigben-tablet.png"),
+                        url("../img/decor/bagel-blue-mobile.svg"),
+                        url("../img/decor/bagel-gray-mobile.svg");
       background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-      background-position: 238px 617px, 0 1px, -90px 146px, -137px 204px;
-      background-size: 145px 19px, 371px 881px, 140px 140px, 519px 519px;
+      background-position: 478px 617px, 0 1px, 180px 146px, 105px 204px;
+      background-size: 145px 19px, 612px 881px, 140px 140px, 519px 519px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/decor/wave.svg"),
+                          url("../img/decor/bigben-tablet@2x.png"),
+                          url("../img/decor/bagel-blue-mobile.svg"),
+                          url("../img/decor/bagel-gray-mobile.svg");
+      }
     }
   }
 
@@ -192,6 +187,76 @@
   }
 
   .program__item-title {
-    font-size: $font-size-medium;
+    font-size: $font-size-small;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    margin-top: 0;
+    padding-top: 109px;
+    padding-bottom: 147px;
+  }
+
+  .program__container {
+    padding-left: 404px;
+
+    &::before {
+      width: 750px;
+      height: 1078px;
+      top: -73px;
+      left: -377px;
+
+      background-image: url("../img/decor/wave.svg"),
+                        url("../img/decor/bigben-desktop.png"),
+                        url("../img/decor/bagel-blue-mobile.svg"),
+                        url("../img/decor/bagel-gray-mobile.svg");
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+      background-position: 583px 748px, 0 1px, 167px 178px, 110px 250px;
+      background-size: 145px 19px, 731px 1078px, 172px 172px, 635px 635px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/decor/wave.svg"),
+                          url("../img/decor/bigben-desktop.png"),
+                          url("../img/decor/bagel-blue-mobile.svg"),
+                          url("../img/decor/bagel-gray-mobile.svg");
+      }
+    }
+  }
+
+  .program__title {
+    width: 705px;
+    margin-bottom: 40px;
+    padding-top: 62px;
+    padding-bottom: 37px;
+
+    &::before {
+      top: -71px;
+      right: -12px;
+
+      font-size: 300px;
+    }
+  }
+
+  .program__cost {
+    margin-bottom: 10px;
+
+    font-size: $font-size-xxl-large;
+  }
+
+  .program__text {
+    margin-bottom: 35px;
+    padding-right: 40px;
+  }
+
+  .program__item {
+    width: 360px;
+    margin-bottom: 4px;
+  }
+
+  .program__item-title {
+    margin-bottom: 7px;
+
+    font-size: 18px;
   }
 }

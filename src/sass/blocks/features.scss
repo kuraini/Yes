@@ -41,7 +41,7 @@
   padding-bottom: 5px;
 
   font-weight: 800;
-  font-size: $font-size-small;
+  font-size: $font-size-x-small;
   line-height: $line-height-medium;
   text-align: center;
 }
@@ -89,10 +89,14 @@
       width: 481px;
       height: 365px;
 
-      background-image: url(../img/decor/bg2-tablet.png);
+      background-image: url("../img/decor/bg2-tablet.png");
       background-repeat: no-repeat;
       background-position: 0 0;
       background-size: 481px 365px;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/decor/bg2-tablet@2x.png");
+      }
     }
 
     &::after {
@@ -103,7 +107,7 @@
 
       width: 145px;
       height: 19px;
-      background-image: url(../img/decor/wave.svg);
+      background-image: url("../img/decor/wave.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
       background-size: 145px 19px;
@@ -136,7 +140,7 @@
   .features__item-title {
     margin-bottom: 6px;
 
-    font-size: $font-size-medium;
+    font-size: $font-size-small;
 
     &::before {
       left: 0;
@@ -146,5 +150,55 @@
 
   .features__item:last-child .features__text {
     text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    padding-top: 222px;
+    padding-bottom: 219px;
+  }
+
+  .features__container::before {
+    top: -244px;
+    right: -373px;
+
+    width: 908px;
+    height: 608px;
+
+    background-image: url("../img/decor/bg2-desktop.png");
+    background-size: 908px 608px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/decor/bg2-desktop@2x.png");
+    }
+  }
+
+  .features__container::after {
+    right: 235px;
+    bottom: -125px;
+  }
+
+  .features__title {
+    width: 505px;
+    margin-bottom: 73px;
+    padding-bottom: 37px;
+  }
+
+  .features__item {
+    width: 263px;
+    padding-right: 0;
+    padding-left: 21px;
+  }
+
+  .features__item-title {
+    margin-bottom: 2px;
+
+    font-size: $font-size-medium;
+    line-height: $line-height-large;
+
+    &::before {
+      left: -23px;
+    }
   }
 }

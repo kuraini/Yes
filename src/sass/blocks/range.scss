@@ -23,3 +23,8 @@
 
   cursor: pointer;
 }
+
+.range__button:hover,
+.range__button:focus {
+  transform: scaleY(1.3);
+}

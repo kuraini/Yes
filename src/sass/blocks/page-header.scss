@@ -16,21 +16,6 @@
 
   line-height: $line-height-medium;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 23px;
-    left: 20px;
-    z-index: -1;
-
-    width: 243px;
-    height: 326px;
-
-    background-image: url(../img/decor/bg1-mobile.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -60,6 +45,11 @@
   text-align: right;
 }
 
+.page-header__logo {
+  margin-top: 9px;
+  margin-left: -2px;
+}
+
 .page-header__address {
   display: none;
   margin: 0;
@@ -73,20 +63,18 @@
   margin-top: -6px;
 }
 
-.page-header__wrapper{
+.page-header__bottom {
   position: relative;
 
   display: flex;
   flex-direction: column;
-  padding-top: 316px;
-
-  text-align: center;
 
   &::before {
     content: "";
     position: absolute;
     top: 224px;
     left: 14px;
+    z-index: 1;
 
     width: 50px;
     height: 50px;
@@ -94,6 +82,26 @@
     border: 9px solid $blue;
     border-radius: 50%;
   }
+}
+
+.page-header__image-wrapper {
+  position: absolute;
+  top: -21px;
+  left: 21px;
+  width: 290px;
+}
+
+.page-header__image {
+  width: 243px;
+  height: 326px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 316px;
+
+  text-align: center;
 }
 
 .page-header__title {
@@ -156,18 +164,6 @@
   }
 
   .page-header__top {
-    &::after {
-      top: -14px;
-      left: -84px;
-
-      width: 365px;
-      height: 488px;
-
-      background-image: url(../img/decor/bg1-tablet.png);
-      background-repeat: no-repeat;
-      background-position: 0 0;
-    }
-
     &::before {
       top: 90px;
       right: 98px;
@@ -185,7 +181,7 @@
   .page-header__logo {
     margin-right: auto;
     margin-left: -13px;
-    padding-top: 6px;
+    margin-top: 6px;
   }
 
   .page-header__address {
@@ -204,17 +200,13 @@
     margin-top: 0;
   }
 
-  .page-header__wrapper {
-    position: relative;
-
-    padding-top: 109px;
-    padding-left: 310px;
-
-    text-align: left;
+  .page-header__bottom {
+    display: flex;
+    flex-direction: row;
 
     &::before {
-      top: 210px;
-      left: -206px;
+      top: 213px;
+      left: -204px;
 
       width: 85px;
       height: 85px;
@@ -225,20 +217,39 @@
     &::after {
       content: "";
       position: absolute;
-      top: 334px;
-      right: -74px;
+      top: 337px;
+      right: -76px;
       z-index: -1;
 
       width: 145px;
       height: 19px;
 
-      background-image: url(../img/decor/wave.svg);
+      background-image: url("../img/decor/wave.svg");
       background-repeat: no-repeat;
       background-size: contain;
     }
   }
 
+  .page-header__image-wrapper {
+    top: -43px;
+    left: -82px;
+    width: 365px;
+  }
+
+  .page-header__image {
+    width: 365px;
+    height: 488px;
+  }
+
+  .page-header__wrapper {
+    padding-top: 112px;
+    padding-left: 310px;
+
+    text-align: left;
+  }
+
   .page-header__title {
+    width: 358px;
     margin-bottom: 16px;
   }
 
@@ -254,5 +265,102 @@
 
   .page-header__button {
     margin-left: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding-bottom: 177px;
+  }
+
+  .page-header__container {
+    &::before {
+      top: 15px;
+      left: -373px;
+
+      width: 1335px;
+
+      font-size: 372px;
+    }
+
+    &::after {
+      top: 63px;
+      left: 1041px;
+
+      width: 510px;
+
+      font-size: 322px;
+    }
+  }
+
+  .page-header__top {
+    &::before {
+      top: 167px;
+      right: 63px;
+    }
+  }
+
+  .page-header__logo {
+    margin-left: 0;
+  }
+
+  .page-header__left {
+    width: 750px;
+    margin-right: 30px;
+  }
+
+  .page-header__right {
+    padding-top: 12px;
+    width: 360px;
+  }
+
+  .page-header__address {
+    margin-top: 12px;
+  }
+
+  .page-header__bottom {
+    &::before {
+      top: 291px;
+      left: -108px;
+    }
+
+    &::after {
+      top: 516px;
+      right: -1px;
+    }
+  }
+
+  .page-header__image-wrapper {
+    top: -70px;
+    left: -4px;
+    width: 608px;
+  }
+
+  .page-header__image {
+    width: 608px;
+    height: 794px;
+  }
+
+  .page-header__wrapper {
+    padding-top: 225px;
+    padding-left: 615px;
+  }
+
+  .page-header__title {
+    width: 525px;
+    margin-bottom: 20px;
+    padding-bottom: 27px;
+  }
+
+  .page-header__title span {
+    margin-bottom: 4px;
+
+    font-size: 34px;
+  }
+
+  .page-header__text {
+    margin-bottom: 97px;
+
+    line-height: $line-height-medium;
   }
 }

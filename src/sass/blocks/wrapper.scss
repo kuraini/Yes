@@ -1,5 +1,6 @@
 .wrapper {
-  max-width: 320px;
+  min-width: 320px;
+  max-width: $tablet-width;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -8,5 +9,12 @@
   .wrapper {
     min-width: $tablet-width;
     max-width: 1300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    min-width: $desktop-width;
+    max-width: 1920px;
   }
 }

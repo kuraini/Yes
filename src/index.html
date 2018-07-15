@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yes - школа английского языка</title>
+    <link rel="preload" href="fonts/gilroylight.woff2" as="font">
+    <link rel="preload" href="fonts/gilroyextrabold.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -36,7 +38,9 @@
             <div class="page-header__left">
               <a href="#" class="page-header__logo logo">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1170px)" srcset="img/content/logo.webp 1x, img/content/logo@2x.webp 2x">
                   <source type="image/webp" srcset="img/content/logo-mobile.webp 1x, img/content/logo-mobile@2x.webp 2x">
+                  <source media="(min-width: 1170px)" srcset="img/content/logo.png 1x, img/content/logo@2x.png 2x">
                   <img src="img/content/logo-mobile.png" srcset="img/content/logo-mobile@2x.png 2x" alt="Школа английского языка Yes" class="logo__image">
                 </picture>
               </a>
@@ -49,11 +53,25 @@
             </div>
           </div>
 
-          <div class="page-header__wrapper">
-            <h1 class="page-header__title title"><span>Ускоренный</span> 2-месячный курс английского языка</h1>
+          <div class="page-header__bottom">
+            <div class="page-header__image-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1170px)" srcset="img/content/bus-desktop.webp 1x, img/content/bus-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 775px)" srcset="img/content/bus-tablet.webp 1x, img/content/bus-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/bus-mobile.webp 1x, img/content/bus-mobile@2x.webp 2x">
+                <source media="(min-width: 1170px)" srcset="img/content/bus-desktop.png 1x, img/content/bus-desktop@2x.png 2x">
+                <source media="(min-width: 775px)" srcset="img/content/bus-tablet.png 1x, img/content/bus-tablet@2x.png 2x">
+                <img src="img/content/bus-mobile.png" srcset="img/content/bus-mobile@2x.png 2x" alt="Красный двухэтажный автобус" class="page-header__image">
+              </picture>
+            </div>
 
-            <p class="page-header__text">Освойте английский для путешествий<br> и научитесь объясняться в любой ситуации</p>
-            <a href="#" class="page-header__button button action">Записаться на пробное занятие</a>
+            <div class="page-header__wrapper">
+
+              <h1 class="page-header__title title"><span>Ускоренный</span> 2-месячный курс английского языка</h1>
+
+              <p class="page-header__text">Освойте английский для путешествий<br> и научитесь объясняться в любой ситуации</p>
+              <a href="#" class="page-header__button button action">Записаться на пробное занятие</a>
+            </div>
           </div>
         </div>
       </header>
@@ -62,15 +80,17 @@
         <section class="reasons">
           <div class="reasons__container container">
 
-            <h2 class="reasons__title title title--question">Бывали ли вы в подобных ситуaциях<span class="visually-hidden">?</span></h2>
+            <h2 class="reasons__title title">Бывали ли вы в подобных ситуaциях<span class="visually-hidden">?</span></h2>
 
             <ol class="reasons__list">
               <li class="reasons__item">
                 <p class="reasons__text">Вы думали, что знаете<br> английский, но в гостинице<br> с трудом выговариваете,<br> какой номер вам нужен</p>
                 <div class="reasons__image-wrapper">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/content/reason1-desktop.webp 1x, img/content/reason1-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 755px)" srcset="img/content/reason1-tablet.webp 1x, img/content/reason1-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/reason1-mobile.webp 1x, img/content/reason1-mobile@2x.webp 2x">
+                    <source media="(min-width: 1170px)" srcset="img/content/reason1-desktop.jpg 1x, img/content/reasons1-desktop@2x.jpg 2x">
                     <source media="(min-width: 755px)" srcset="img/content/reason1-tablet.jpg 1x, img/content/reason1-tablet@2x.jpg 2x">
                     <img src="img/content/reason1-mobile.jpg" srcset="img/content/reason1-mobile@2x.jpg 2x" alt="" class="reasons__img">
                   </picture>
@@ -80,8 +100,10 @@
                 <p class="reasons__text">Вы смогли спросить,<br> до какой станции метро нужно дойти,<br>но не поняли, куда вас отправили</p>
                 <div class="reasons__image-wrapper">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/content/reason2-desktop.webp 1x, img/content/reason2-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 755px)" srcset="img/content/reason2-tablet.webp 1x, img/content/reason2-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/reason2-mobile.webp 1x, img/content/reason2-mobile@2x.webp 2x">
+                    <source media="(min-width: 1170px)" srcset="img/content/reason2-desktop.jpg 1x, img/content/reasons2-desktop@2x.jpg 2x">
                     <source media="(min-width: 755px)" srcset="img/content/reason2-tablet.jpg 1x, img/content/reason2-tablet@2x.jpg 2x">
                     <img src="img/content/reason2-mobile.jpg" srcset="img/content/reason2-mobile@2x.jpg 2x" alt="" class="reasons__img">
                   </picture>
@@ -91,8 +113,10 @@
                 <p class="reasons__text">В аэропорту при любом подозрении<br> на задрежку, вы ищите представителя, хоть как-то говорящего по-русски</p>
                 <div class="reasons__image-wrapper">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/content/reason3-desktop.webp 1x, img/content/reason3-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 755px)" srcset="img/content/reason3-tablet.webp 1x, img/content/reason3-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/reason3-mobile.webp 1x, img/content/reason3-mobile@2x.webp 2x">
+                    <source media="(min-width: 1170px)" srcset="img/content/reason3-desktop.jpg 1x, img/content/reasons3-desktop@2x.jpg 2x">
                     <source media="(min-width: 755px)" srcset="img/content/reason3-tablet.jpg 1x, img/content/reason3-tablet@2x.jpg 2x">
                     <img src="img/content/reason3-mobile.jpg" srcset="img/content/reason3-mobile@2x.jpg 2x" alt="" class="reasons__img">
                   </picture>
@@ -103,8 +127,10 @@
                 <p class="reasons__text">Все это портит впечатление<br> от отдыха и отбивает желание посещать новые страны</p>
                 <div class="reasons__image-wrapper">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/content/reason-resume-desktop.webp 1x, img/content/reason-resume-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 755px)" srcset="img/content/reason-resume-tablet.webp 1x, img/content/reason-resume-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/reason-resume-mobile.webp 1x, img/content/reason-resume-mobile@2x.webp 2x">
+                    <source media="(min-width: 1170px)" srcset="img/content/reason-resume-desktop.jpg 1x, img/content/reason-resume-desktop@2x.jpg 2x">
                     <source media="(min-width: 755px)" srcset="img/content/reason-resume-tablet.jpg 1x, img/content/reason-resume-tablet@2x.jpg 2x">
                     <img src="img/content/reason-resume-mobile.jpg" srcset="img/content/reason-resume-mobile@2x.jpg 2x" alt="" class="reasons__img">
                   </picture>
@@ -147,8 +173,10 @@
               <li class="teachers__item">
                 <div class="teachers__image-wrapper">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/content/teachers/teacher1-desktop.webp 1x, img/content/teachers/teacher1-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 755px)" srcset="img/content/teachers/teacher1-tablet.webp 1x, img/content/teachers/teacher1-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/teachers/teacher1-mobile.webp 1x, img/content/teachers/teacher1-mobile.webp 2x">
+                    <source media="(min-width: 1170px)" srcset="img/content/teachers/teacher1-desktop.jpg 1x, img/content/teachers/teacher1-desktop@2x.jpg 2x">
                     <source media="(min-width: 755px)" srcset="img/content/teachers/teacher1-tablet.jpg 1x, img/content/teachers/teacher1-tablet@2x.jpg 2x">
                     <img src="img/content/teachers/teacher1-mobile.jpg" srcset="img/content/teachers/teacher1-mobile@2x.jpg 2x" alt="Алла Ристовская" class="teachers__image">
                   </picture>
@@ -163,6 +191,7 @@
                   <picture>
                     <source type="image/webp" media="(min-width: 755px)" srcset="img/content/teachers/teacher2-tablet.webp 1x, img/content/teachers/teacher2-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/teachers/teacher2-mobile.webp 1x, img/content/teachers/teacher2-mobile.webp 2x">
+                    <source media="(min-width: 1170px)" srcset="img/content/teachers/teacher2-desktop.jpg 1x, img/content/teachers/teacher2-desktop@2x.jpg 2x">
                     <source media="(min-width: 755px)" srcset="img/content/teachers/teacher2-tablet.jpg 1x, img/content/teachers/teacher2-tablet@2x.jpg 2x">
                     <img src="img/content/teachers/teacher2-mobile.jpg" srcset="img/content/teachers/teacher2-mobile@2x.jpg 2x" alt="Анастасия Левчук" class="teachers__image">
                   </picture>
@@ -176,7 +205,9 @@
                 <div class="teachers__image-wrapper">
                   <picture>
                     <source type="image/webp" media="(min-width: 755px)" srcset="img/content/teachers/teacher3-tablet.webp 1x, img/content/teachers/teacher3-tablet@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 755px)" srcset="img/content/teachers/teacher3-tablet.webp 1x, img/content/teachers/teacher3-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/teachers/teacher3-mobile.webp 1x, img/content/teachers/teacher3-mobile.webp 2x">
+                    <source media="(min-width: 1170px)" srcset="img/content/teachers/teacher3-desktop.jpg 1x, img/content/teachers/teacher3-desktop@2x.jpg 2x">
                     <source media="(min-width: 755px)" srcset="img/content/teachers/teacher3-tablet.jpg 1x, img/content/teachers/teacher3-tablet@2x.jpg 2x">
                     <img src="img/content/teachers/teacher3-mobile.jpg" srcset="img/content/teachers/teacher3-mobile@2x.jpg 2x" alt="Евгений Пак" class="teachers__image">
                   </picture>
@@ -202,7 +233,7 @@
             <ul class="program__list">
               <li class="program__item">
                 <h3 class="program__item-title">1 неделя - аэропорт</h3>
-                <p class="program__item-text">Вылет-прилет, регистрация, специальный и пограничный, потеря багажа, задержка рейса</p>
+                <p class="program__item-text">Вылет-прилет, регистрация, специальный и пограничный,<br> потеря багажа, задержка рейса</p>
               </li>
               <li class="program__item">
                 <h3 class="program__item-title">2 неделя - дорога, трансфер</h3>
@@ -218,7 +249,7 @@
               </li>
               <li class="program__item">
                 <h3 class="program__item-title">5 неделя - местность, поиск</h3>
-                <p class="program__item-text">Выяснение дороги, направления,  местонахождения (собственного и необходимых мест)</p>
+                <p class="program__item-text">Выяснение дороги, направления,  местонахождения (собственного<br> и необходимых мест)</p>
               </li>
               <li class="program__item">
                 <h3 class="program__item-title">6 неделя - магазины</h3>
@@ -246,12 +277,14 @@
               <li class="about__item">
                 <div class="about__info">
                   <h3 class="about__item-title">Простое запоминание</h3>
-                  <p class="about__text">Слова запоминаются в результате упрощенных техник и применения<br> в спонтанных ситуациях,<br> а не посредством зубрежки</p>
+                  <p class="about__text">Слова запоминаются в результате упрощенных техник и применения в спонтанных ситуациях,<br> а не посредством зубрежки</p>
                 </div>
                 <div class="about__image-wrapper">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/content/about1-desktop.webp 1x, img/content/about1-desktop@2x.webp 2x">
                     <source  type="image/webp" media="(min-width: 755px)" srcset="img/content/about1-tablet.webp 1x, img/content/about1-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/about1-mobile.jpg 1x, img/content/about1-mobile@2x.jpg 2x">
+                    <source media="(min-width: 1170px)" srcset="img/content/about1-desktop.jpg 1x, img/content/about1-desktop@2x.jpg 2x">
                     <source media="(min-width: 755px)" srcset="img/content/about1-tablet.jpg 1x, img/content/about1-tablet@2x.jpg 2x">
                     <img src="img/content/about1-mobile.jpg" srcset="img/content/about1-mobile@2x.jpg 2x" alt="" class="about__image">
                   </picture>
@@ -265,8 +298,10 @@
                 </div>
                 <div class="about__image-wrapper">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/content/about2-desktop.webp 1x, img/content/about2-desktop@2x.webp 2x">
                     <source  type="image/webp" media="(min-width: 755px)" srcset="img/content/about2-tablet.webp 1x, img/content/about2-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/about2-mobile.webp 1x, img/content/about2-mobile@2x.webp 2x">
+                    <source media="(min-width: 1170px)" srcset="img/content/about2-desktop.jpg 1x, img/content/about2-desktop@2x.jpg 2x">
                     <source media="(min-width: 755px)" srcset="img/content/about2-tablet.jpg 1x, img/content/about2-tablet@2x.jpg 2x">
                     <img src="img/content/about2-mobile.jpg" srcset="img/content/about2-mobile@2x.jpg 2x" alt="" class="about__image">
                   </picture>
@@ -280,8 +315,10 @@
                 </div>
                 <div class="about__image-wrapper">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/content/about3-desktop.webp 1x, img/content/about3-desktop@2x.webp 2x">
                     <source  type="image/webp" media="(min-width: 755px)" srcset="img/content/about3-tablet.webp 1x, img/content/about3-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/about3-mobile.webp 1x, img/content/about3-mobile@2x.webp 2x">
+                    <source media="(min-width: 1170px)" srcset="img/content/about3-desktop.jpg 1x, img/content/about3-desktop@2x.jpg 2x">
                     <source media="(min-width: 755px)" srcset="img/content/about3-tablet.jpg 1x, img/content/about3-tablet@2x.jpg 2x">
                     <img src="img/content/about3-mobile.jpg" srcset="img/content/about3-mobile@2x.jpg 2x" alt="" class="about__image">
                   </picture>
@@ -295,8 +332,10 @@
                 </div>
                 <div class="about__image-wrapper">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1170px)" srcset="img/content/about4-desktop.webp 1x, img/content/about4-desktop@2x.webp 2x">
                     <source  type="image/webp" media="(min-width: 755px)" srcset="img/content/about4-tablet.webp 1x, img/content/about4-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/content/about4-mobile.webp 1x, img/content/about4-mobile@2x.webp 2x">
+                    <source media="(min-width: 1170px)" srcset="img/content/about4-desktop.jpg 1x, img/content/about4-desktop@2x.jpg 2x">
                     <source media="(min-width: 755px)" srcset="img/content/about4-tablet.jpg 1x, img/content/about4-tablet@2x.jpg 2x">
                     <img src="img/content/about4-mobile.jpg" srcset="img/content/about4-mobile@2x.jpg 2x" alt="" class="about__image">
                   </picture>
@@ -317,7 +356,9 @@
                 <li class="slider__item  slider__item--active">
                   <div class="slider__image-wrapper">
                     <picture>
+                      <source type="image/webp" srxset="img/content/users/user2-desktop.webp 1x, img/content/users/user2-desktop@2x.webp 2x">
                       <source type="image/webp" srcset="img/content/users/user2-mobile.webp 1x, img/content/users/user2-mobile@2x.webp 2x">
+                      <source media="(min-width: 1170px)" srcset="img/content/users/user2-desktop.jpg 1x, img/content/users/user2-desktop.jpg 2x">
                       <img src="img/content/users/user2-mobile.jpg" srcset="img/content/users/user2-mobile@2x.jpg 2x" alt="Александра Иванова" class="slider__image">
                     </picture>
                   </div>
@@ -339,7 +380,9 @@
                 <li class="slider__item">
                   <div class="slider__image-wrapper">
                     <picture>
+                      <source type="image/webp" srxset="img/content/users/user1-desktop.webp 1x, img/content/users/user1-desktop@2x.webp 2x">
                       <source type="image/webp" srcset="img/content/users/user1-mobile.webp 1x, img/content/users/user1-mobile@2x.webp 2x">
+                      <source media="(min-width: 1170px)" srcset="img/content/users/user1-desktop.jpg 1x, img/content/users/user1-desktop.jpg 2x">
                       <img src="img/content/users/user1-mobile.jpg" srcset="img/content/users/user1-mobile@2x.jpg 2x" alt="Владимир Илецкий" class="slider__image">
                     </picture>
                   </div>
@@ -360,7 +403,9 @@
                 <li class="slider__item">
                   <div class="slider__image-wrapper">
                     <picture>
+                      <source type="image/webp" srxset="img/content/users/user3-desktop.webp 1x, img/content/users/user3-desktop@2x.webp 2x">
                       <source type="image/webp" srcset="img/content/users/user3-mobile.webp 1x, img/content/users/user3-mobile@2x.webp 2x">
+                      <source media="(min-width: 1170px)" srcset="img/content/users/user3-desktop.jpg 1x, img/content/users/user3-desktop.jpg 2x">
                       <img src="img/content/users/user3-mobile.jpg" srcset="img/content/users/user3-mobile@2x.jpg 2x" alt="Евгения Смирнова" class="slider__image">
                     </picture>
                   </div>
@@ -473,7 +518,6 @@
 
       </section>
     </div>
-
     <div class="overlay"></div>
 
     <script src="js/libs/picturefill.min.js"></script>

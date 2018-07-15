@@ -11,3 +11,10 @@
     padding-left: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1170px;
+    padding-left: 15px;
+  }
+}

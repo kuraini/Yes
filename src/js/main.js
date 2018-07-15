@@ -1,3 +1,5 @@
+'use strict';
+
 var slider = document.querySelector('.slider');
 var sliderButtons = slider.querySelectorAll('.slider__toggle');
 var sliderItems = slider.querySelectorAll('.slider__item');
