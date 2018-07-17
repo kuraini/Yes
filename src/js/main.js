@@ -16,29 +16,35 @@ function removeActiveClass () {
   activeButton.classList.remove('slider__toggle--active');
 }
 
-sliderButtons.forEach(function(item, i, arr) {
-  item.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    removeActiveClass();
-    sliderItems[i].classList.add('slider__item--active');
-    item.classList.add('slider__toggle--active');
-  });
+for (var i = 0; i < sliderButtons.length; i++) {
+  (function (i) {
+    var button = sliderButtons[i];
+    button.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      removeActiveClass();
+      sliderItems[i].classList.add('slider__item--active');
+      button.classList.add('slider__toggle--active');
+    });
 
-  item.addEventListener('focus', function (evt) {
-    evt.preventDefault();
-    removeActiveClass();
-    sliderItems[i].classList.add('slider__item--active');
-    item.classList.add('slider__toggle--active');
-  });
-});
+    button.addEventListener('focus', function (evt) {
+      evt.preventDefault();
+      removeActiveClass();
+      sliderItems[i].classList.add('slider__item--active');
+      button.classList.add('slider__toggle--active');
+    });
+  })(i);
+}
 
-actions.forEach(function(item) {
-  item.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    overlay.classList.add('overlay--show');
-    popup.classList.add('modal--show');
-  });
-});
+for (var i = 0; i < actions.length; i++) {
+  (function (i) {
+    var button = actions[i];
+    button.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      overlay.classList.add('overlay--show');
+      popup.classList.add('modal--show');
+    })
+  })(i)
+}
 
 popupClose.addEventListener('click', function (evt) {
   evt.preventDefault();
